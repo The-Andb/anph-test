@@ -1,0 +1,4 @@
+CREATE PROCEDURE `simple_proc`()
+BEGIN
+  SELECT 1;
+END;
