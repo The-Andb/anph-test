@@ -1,0 +1,24 @@
+{
+  "name": "@the-andb/test",
+  "version": "0.0.1",
+  "description": "The Andb Test Suite - Integration & E2E Tests",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:unit": "jest --config ./unit/jest.config.js",
+    "test:integration": "jest --config ./integration/jest.config.js",
+    "test:e2e": "jest --config ./e2e/jest.config.js",
+    "test:all": "npm run test:unit && npm run test:e2e",
+    "test:coverage": "npm run test:all -- --coverage",
+    "test:aio": "jest --config jest.config.js --coverage",
+    "report:dashboard": "ts-node scripts/generate-dashboard.ts",
+    "docker:reset": "npm run docker:down && npm run docker:up"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "jest-mock-extended": "^4.0.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+dist/
+*.db
+*.log
+.DS_Store
+temp_e2e/
+f1.sql
+f2.sql
