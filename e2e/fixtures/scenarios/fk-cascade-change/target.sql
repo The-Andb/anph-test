@@ -1,7 +1,7 @@
 CREATE TABLE `order_items` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `order_id` int NOT NULL,
-  `product_id` int NOT NULL,
+  `order_id` int DEFAULT NULL,
+  `product_id` int DEFAULT NULL,
   `quantity` int NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `idx_order` (`order_id`),

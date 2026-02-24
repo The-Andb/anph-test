@@ -33,6 +33,15 @@ export const dockerMysqlConfigs = {
   },
 };
 
+// Root config for sandbox execution layer (CREATE/DROP DATABASE)
+export const sandboxRootConfig = {
+  host: '127.0.0.1',
+  port: 3306,
+  user: 'root',
+  password: 'root123',
+  database: '',
+};
+
 export const dockerSshConfig = {
   host: '127.0.0.1',
   port: 2222,

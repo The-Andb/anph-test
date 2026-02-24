@@ -23,7 +23,6 @@ describe('CLI Playground Matrix E2E', () => {
   const noChangeScenarios = new Set([
     'int-display-width',
     'implicit-btree',
-    'version-comments',
     'reorder-columns'
   ]);
 
