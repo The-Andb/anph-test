@@ -1,0 +1,16 @@
+{
+  "add-column": "Adding new columns to an existing table",
+  "add-foreign-key": "Creating relationships between tables",
+  "change-default": "Modifying column DEFAULT values",
+  "change-index": "Switching Index types (Normal -> Unique)",
+  "change-nullability": "Toggling NULL/NOT NULL constraints",
+  "composite-index": "Modifying multi-column index order",
+  "drop-index": "Removing existing indexes",
+  "drop-table": "Deleting tables from schema",
+  "modify-column": "Changing column data types (e.g. varchar -> enum)",
+  "new-table": "Creating entirely new tables",
+  "procedure-matrix": "Updating Stored Procedure parameters and body",
+  "rename-column": "Detecting column renames (DROP + ADD)",
+  "trigger-complex-matrix": "Modifying Trigger logic and timing",
+  "view-matrix": "Updating View query definitions"
+}

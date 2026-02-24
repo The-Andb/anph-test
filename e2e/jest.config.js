@@ -5,7 +5,7 @@ module.exports = {
   rootDir: '.',
   testMatch: ['**/*.spec.ts'],
   transform: {
-    '^.+\\.tsx?$': ['ts-jest', { isolatedModules: true }],
+    '^.+\\.tsx?$': 'ts-jest',
   },
   moduleNameMapper: {
     '^@the-andb/core/(.*)$': '<rootDir>/../../andb-core/src/$1',
