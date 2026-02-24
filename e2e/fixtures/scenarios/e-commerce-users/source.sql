@@ -1,0 +1,21 @@
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password_hash` varchar(255) NOT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `avatar_url` varchar(500) DEFAULT NULL,
+  `role` enum('customer','admin','support') NOT NULL DEFAULT 'customer',
+  `is_verified` tinyint NOT NULL DEFAULT '0',
+  `login_count` int NOT NULL DEFAULT '0',
+  `last_login_at` datetime DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uq_username` (`username`),
+  UNIQUE KEY `uq_email` (`email`),
+  KEY `idx_role` (`role`),
+  KEY `idx_last_login` (`last_login_at`)
+) ENGINE=InnoDB;
